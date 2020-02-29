@@ -19,4 +19,21 @@ npm i save-dev @types/node
 
 git add .
 git commit -m "tsc init, installed node @types, edited .tsconfig [lib 'es6',noimplicit any: true]"
+git push
+
+open vs code, make new src and out directory, create index.ts in VSC
+
+git add .
+git commit -m ""
+git push
+
+
+git add .
+git commit -m ""
+git push
+
+
+git add .
+git commit -m ""
+git push
 ```
