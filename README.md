@@ -24,9 +24,10 @@ git push
 open vs code, make new src and out directory, create index.ts in VSC
 
 git add .
-git commit -m ""
+git commit -m "src and out, "
 git push
 
+next: set up jest...
 
 git add .
 git commit -m ""
