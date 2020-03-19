@@ -1,18 +1,12 @@
 import fs from 'fs';
 import http from 'http';
 import { summarizeFilesInDirectorySync } from './FileSummarizer';
+import { fsWriteFile } from './app_modules/fsWriteFile';
+import { server } from './app_modules/httpServer';
 
-fs.writeFile('./newFile.txt', null, (error) => {
-    if (error) console.log(`fs.writeFile error: ${error}`);
-    else console.log('file created successfully');
-});
-
-const port: number = 3334;
-
-const server: http.Server = http.createServer((request: http.IncomingMessage, response: http.ServerResponse) => {
-    response.end('Hello World!');
-});
-
+const port: number = 3334 || process.env.port;
 server.listen(port, () => console.log(`server listeing on ${port}`));
 
-console.log(summarizeFilesInDirectorySync('/'));
+console.log(fsWriteFile);
+
+console.log(summarizeFilesInDirectorySync('/Users/blake/Projects/node/node_server/src'));
