@@ -7,12 +7,14 @@ git commit -m "npm init"
 git remote add origin https://github.com/blakemade/node-server.git
 git push --set-upstream origin master
 npm install --save-dev typescript
-$ vim .git ignore and paste https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore
+$ vim .git ignore and paste https://raw.githubusercontent.com/github/gitignore/
+master/Node.gitignore
 
 git add .
 git commit -m "ts and .gitignore for node.js"
 
-from   https://blog.angular-university.io/typescript-2-type-system-how-do-type-definitions-work-in-npm-when-to-use-types-and-why-what-are-compiler-opt-in-types/
+from   https://blog.angular-university.io/typescript-2-type-system-how-do-type-
+definitions-work-in-npm-when-to-use-types-and-why-what-are-compiler-opt-in-types/
 
 # setup a Typescript compiler configuration file tsconfig.json
 ./node_modules/.bin/tsc --init
@@ -20,7 +22,8 @@ from   https://blog.angular-university.io/typescript-2-type-system-how-do-type-d
 npm i save-dev @types/node 
 
 git add .
-git commit -m "tsc init, installed node @types, edited .tsconfig [lib 'es6',noimplicit any: true]"
+git commit -m "tsc init, installed node @types, edited .tsconfig [lib 'es6',
+noimplicit any: true]"
 git push
 
 open vs code, make new src and out directory, create index.ts in VSC
@@ -81,5 +84,10 @@ git add A
 git commit -m "dir structure and some tests"
 git push
 
+messed around with tests, added __tests__ and __mocks__, a server is created
+and logs a message to the console. A new file is created. Working on testing 
+the checks of file existance.
+
+git commit -m "tests and mocks"
 
 ```
